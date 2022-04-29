@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".departure"
+    android:background="#1D2026">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="#1D2026"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:context=".NavigationActivity">
+
+
+        <ImageButton
+            android:id="@+id/appointment_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:background="@drawable/ic_union"
+            android:padding="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/appointment_tv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/appointment_tv"
+            android:layout_width="63dp"
+            android:layout_height="14dp"
+            android:layout_marginBottom="14dp"
+            android:gravity="center_horizontal"
+            android:text="вылет"
+            android:textSize="12sp"
+            android:textColor="@drawable/btn_continue"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/appointment_btn"
+            app:layout_constraintStart_toStartOf="@+id/appointment_btn" />
+
+        <ImageButton
+            android:id="@+id/clinic_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_union__1_"
+            android:padding="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/clinic_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/clinic_tv"
+            android:layout_width="58dp"
+            android:layout_height="14dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_horizontal"
+            android:text="прилет"
+            android:textSize="12sp"
+            android:textColor="#FFFFF"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/clinic_btn"
+            app:layout_constraintStart_toStartOf="@+id/clinic_btn" />
+
+        <ImageButton
+            android:id="@+id/policy_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/ic_trips"
+            android:padding="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/policy_tv"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/policy_tv"
+            android:layout_width="58dp"
+            android:layout_height="14dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_horizontal"
+            android:text="Пересадка"
+            android:textSize="12sp"
+            android:textColor="#FFFFF"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/policy_btn"
+            app:layout_constraintStart_toStartOf="@+id/policy_btn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
